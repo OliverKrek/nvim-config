@@ -42,10 +42,10 @@ return {
       { desc = "Harpoon: Edit List (Basic)" })
 
     -- 4. QWERTY Home Row Jumps (C-h, C-j, C-k, C-l)
-    vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
-    vim.keymap.set("n", "<C-j>", function() harpoon:list():select(2) end)
-    vim.keymap.set("n", "<C-k>", function() harpoon:list():select(3) end)
-    vim.keymap.set("n", "<C-l>", function() harpoon:list():select(4) end)
+    vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
+    vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
+    vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
+    vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)
 
     -- 5. Cycle through list (Next/Prev)
     -- Shift+P and Shift+N for Quick Toggling
