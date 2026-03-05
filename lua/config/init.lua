@@ -8,8 +8,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+require("config.lazy_init")
 
 require("config.lsp")
-require("config.lazy_init")
 require("config.remap")
 require("config.set")
