@@ -10,11 +10,19 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
-vim.opt.textwidth = 80
-
 vim.opt.swapfile = false
 vim.opt.backup = false
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+vim.opt.signcolumn = "yes"
+
+vim.o.updatetime = 400
+
+vim.diagnostic.config({
+    virtual_text = false,
+    signs = true,
+    virtual_lines = false,
+    update_in_insert = true
+})
