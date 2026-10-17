@@ -23,6 +23,7 @@ return {
       -- 'dart',
       'markdown',
       'markdown_inline',
+      'yaml'
     })
 
     vim.api.nvim_create_autocmd('FileType', {
@@ -38,6 +39,7 @@ return {
         'typescript',
         'typescriptreact',
         'markdown',
+        'yaml',
       },
       callback = function()
         vim.treesitter.start()

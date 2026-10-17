@@ -1,8 +1,17 @@
 return {
   "sudo-tee/opencode.nvim",
+  enabled = true,
   lazy = false,
   config = function()
-    require("opencode").setup({})
+    require("opencode").setup({
+        ui = {
+            input = {
+                text = {
+                    wrap = true,
+                },
+            },
+        },
+    })
   end,
   dependencies = {
     "nvim-lua/plenary.nvim",
